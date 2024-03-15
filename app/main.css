@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+
+.logo{
+    padding: 0.5vw 1vw;
+    scale: 1.1;
+}
+
+
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 2vw;
+    align-items: center;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: black;
+}
+.nav-items{
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    font-family: "Kode Mono", monospace;
+    align-items: center;
+}
+
+.nav-items button{
+    background-color: white;
+    border: none;
+    background-color: #00bfff;
+    width: 6vw;
+    height: 4vh;
+    border-radius: 10px;
+    font-size: 1.2vw;
+    font-family: "Kode Mono", monospace;
+    font-weight: 1000;
+
+
+}
+
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    top: 10vh;
+}
+
+.hero img{
+    position: absolute;
+}
+
+.hero img:nth-child(1){
+    left: 12vw;
+}
+
+.hero img:nth-child(3){
+    right: 12vw;
+}
+
+.heroblob{
+    height: 80vh;
+    aspect-ratio: 1;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: blur(80px);
+    top: -30vh;
+    z-index: -1;
+    transform: translateX(-120px);
+
+
+}
+
+.blob1{
+    position: absolute;
+    border-radius: 50%;
+    background-color: #00bfff;
+    height: 60vh;
+    aspect-ratio: 1;
+
+
+    animation: anime1 5s ease-in-out  infinite alternate;
+}
+
+.blob2{
+
+
+    position: absolute;
+    border-radius: 50%;
+    background-image: linear-gradient(#00bfff, #0055ff);
+
+    height: 70vh;
+    aspect-ratio: 1;
+    animation: anime2 10s ease-in-out  infinite alternate-reverse;
+
+    
+}
+
+@keyframes anime1 {
+    from{
+        transform: translate(-10%,-10%) skew(6deg, 13deg);
+        rotate: 0;
+    }
+    to{
+        transform: translate(-10%,-10%) skew(0deg, 0deg);
+        rotate: 360deg;
+    }
+    
+}
+
+@keyframes anime2 {
+    from{
+        transform: translate(-14%,-12%) skew(0deg, 0deg);
+        rotate: 0;
+    }
+    to{
+        transform: translate(-10%,-10%) skew(10deg, 14deg);
+        rotate: 360deg;
+    }
+    
+}
