@@ -14,6 +14,7 @@ const page = () => {
       </div>
       <div className="nav-items">
         <a href=""><h3>Uses</h3></a>
+        <a href=""><h3>shtt</h3></a>
         
 
         <a href=""><h3>About</h3></a>
