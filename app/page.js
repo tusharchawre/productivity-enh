@@ -13,7 +13,7 @@ const page = () => {
      <img src="/assets/logo.png" alt="" />
       </div>
       <div className="nav-items">
-        <a href=""><h3>shittt</h3></a>
+        <a href=""><h3>Uses</h3></a>
         
 
         <a href=""><h3>About</h3></a>
