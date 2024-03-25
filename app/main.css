@@ -1,141 +1,156 @@
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
-
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
+
+
 html , body{
     height: 100%;
     width: 100%;
+;
 }
 
-
-.logo{
-    padding: 0.5vw 1vw;
-    scale: 1.1;
-}
-
-
-
-
-.nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 1vw 2vw;
-    align-items: center;
-}
-
-.nav-items a{
-    text-decoration: none;
-    color: black;
-}
-.nav-items{
-    display: flex;
-    width: 20%;
-    justify-content: space-around;
-    font-family: "Kode Mono", monospace;
-    align-items: center;
-}
-
-.nav-items button{
-    background-color: white;
-    border: none;
-    background-color: #00bfff;
-    width: 6vw;
-    height: 4vh;
-    border-radius: 10px;
-    font-size: 1.2vw;
-    font-family: "Kode Mono", monospace;
-    font-weight: 1000;
-
-
-}
-
-
-.hero{
-    position: relative;
+.main{
     width: 100%;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    top: 10vh;
-}
-
-.hero img{
-    position: absolute;
-}
-
-.hero img:nth-child(1){
-    left: 12vw;
-}
-
-.hero img:nth-child(3){
-    right: 12vw;
-}
-
-.heroblob{
-    height: 80vh;
-    aspect-ratio: 1;
-    /* background-color: red; */
-    position: relative;
+    height: 100vh;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: blur(80px);
-    top: -30vh;
-    z-index: -1;
-    transform: translateX(-120px);
+}
+
+.glass{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0.5vw 0.5vw 1vw rgba(48, 48, 48, 0.169);
 
 
 }
 
-.blob1{
+.tealblob{
     position: absolute;
+    height:400px;
+    width: 400px;
     border-radius: 50%;
-    background-color: #00bfff;
-    height: 60vh;
-    aspect-ratio: 1;
+    left: 300px;
+    top: 50px;
+    z-index: 2;
+    background-color: #2BBFED;
+    animation: tealanime 10s cubic-bezier(0.455, 0.03, 0.515, 0.955)  infinite alternate-reverse ;
 
-
-    animation: anime1 5s ease-in-out  infinite alternate;
 }
 
-.blob2{
-
-
-    position: absolute;
-    border-radius: 50%;
-    background-image: linear-gradient(#00bfff, #0055ff);
-
-    height: 70vh;
-    aspect-ratio: 1;
-    animation: anime2 10s ease-in-out  infinite alternate-reverse;
-
-    
-}
-
-@keyframes anime1 {
+@keyframes tealanime {
     from{
-        transform: translate(-10%,-10%) skew(6deg, 13deg);
-        rotate: 0;
+        transform: translate(0%,0%) skew(30deg,0deg) rotate(360deg);
+
+
+            transform-origin: top left;
+
     }
     to{
-        transform: translate(-10%,-10%) skew(0deg, 0deg);
-        rotate: 360deg;
+        transform: translate(0%,0%)  ;
     }
     
 }
 
-@keyframes anime2 {
+.greenblob{
+    position: absolute;
+    height:400px;
+    width: 400px;
+    border-radius: 50%;
+    left: 10px;
+    bottom: -40px;
+    z-index: 2;
+    background-color: #8CED2B;
+    opacity: 0.8;
+    animation: greenanime 10s cubic-bezier(0.455, 0.03, 0.515, 0.955) 2s infinite alternate-reverse ;
+
+
+}
+
+@keyframes greenanime {
     from{
-        transform: translate(-14%,-12%) skew(0deg, 0deg);
-        rotate: 0;
+        transform: translate(0%,0%) skew(30deg,0deg) rotate(360deg);
+
+
+            transform-origin: bottom left;
+
     }
     to{
-        transform: translate(-10%,-10%) skew(10deg, 14deg);
-        rotate: 360deg;
+        transform: translate(0%,0%)  ;
     }
     
 }
+.pinkblob{
+    position: absolute;
+    height:500px;
+    width: 500px;
+    border-radius: 50%;
+    right: -50px;
+    bottom: -70px;
+    z-index: 1;
+
+    animation: pinkanime 15s cubic-bezier(0.455, 0.03, 0.515, 0.955)   infinite alternate-reverse ;
+
+    animation-delay: 3s;
+    background-color: #C04242;
+
+}
+@keyframes pinkanime {
+    from{
+        transform: translate(-10%,0%) skew(30deg) rotate(360deg);
+
+
+            transform-origin: bottom right;
+
+    }
+    to{
+        transform: translate(0%,0%)  ;
+    }
+    
+}
+
+.glassblur{
+    background: white;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background:  rgba(255,255,255,0.1) ;
+    background: linear-gradient(to top right,  rgba(255,255,255,0.1) ,  rgba(255,255,255,0.03));
+    border: 0.5px solid  rgba(255,255,255,0.17);
+    border-right: 0.5px solid  rgba(255,255,255,0.05);
+    border-bottom: 0.5px solid  rgba(255,255,255,0.05);
+
+
+    border-radius: 20px;
+    z-index: 99;
+    backdrop-filter: blur(130px) ;
+
+}
+
+.noise{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    opacity: 0.05;
+    background: url(https://grainy-gradients.vercel.app/noise.svg);
+}
+.hero{
+    position: absolute;
+    left: 100px;
+    top:10px;
+
+
+
+    z-index: 999;
+}
+
+

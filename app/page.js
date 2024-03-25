@@ -7,34 +7,30 @@ import './main.css'
 const page = () => {
   return (
     <>
-    <div className="nav">
-      <div className="logo">
+    <div className="main">
 
-     <img src="/assets/logo.png" alt="" />
-      </div>
-      <div className="nav-items">
-        <a href=""><h3>Uses</h3></a>
-        <a href=""><h3>shtt</h3></a>
+   
+
+      <div className="glass">
         
-
-        <a href=""><h3>About</h3></a>
-        <a href=""><button>Login</button></a>
-
-        
-       
+      <div className="tealblob"></div>
+      <div className="pinkblob"></div>
+      <div className="greenblob"></div>
+      <div className="glassblur"></div>
+        <div className="noise"></div>
+      <div className="hero">
+        <h1>Shit</h1>
+      </div>
       </div>
 
-    </div>
-    <div className="hero">
-      <img src="/assets/Note1.png" alt="" />
-      <img src="/assets/Note 2.png" alt="" />
-      <img src="/assets/Note 3.png" alt="" />
-    </div>
-    <div className="heroblob">
-      <div className="blob2"></div>
-      <div className="blob1"></div>
+
+
+
+
+
 
     </div>
+  
     </>
   )
 }
