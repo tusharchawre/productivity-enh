@@ -3,9 +3,25 @@ import React from 'react'
 import './main.css'
 import Image from 'next/image'
 import Cave from "../public/assets/shh.svg"
+import Clock from './clock'
+
+
+
+
+
+
+
 
 
 const page = () => {
+
+  
+
+
+
+
+
+
   return (
     <>
     <div className="main">
@@ -42,26 +58,53 @@ const page = () => {
 
 
     <div className="main2">
+      <div className="main2blur"></div>
+
+
       <div className="tealblob2"></div>
       <div className="purblob2"></div>
 
+
       <div className="ver-glass" id='glass'>
+      <div className="noise"></div>
+
+        
 
 
 <img className="goodnotes"  src="/assets/goodnotes.jpg" alt="" srcset="" />      
 </div>
+
 <div className='graph-glass' id='glass'>
 <img className="graphs" src="/assets/graphs.jpeg" alt="" srcset="" />      
 
 </div>
 
 <div className='shit-glass' id='glass'>
+<div className="noise"></div>
 
-progress bar
+  <div className="circle">
+
+  <svg>
+    <circle className='bg' cx="57" cy="57" r="52" />
+    <circle className='progress' cx="57" cy="57" r="52" />
+
+  </svg>
+  </div>
+  <div className="text">TEri bkc</div>
+
 </div>
 
-<div className="clock" id="glass">clock</div>
-<div className="vividImage" id="glass"></div>
+<div className="clock-main" id="glass">
+<div className="noise"></div>
+<Clock />
+
+</div>
+<img className="graphs sht2" src="/assets/Designer.png" alt="" srcset="" />      
+<div className="vividImage" id="glass">
+<div className="noise"></div>
+<img className="graphs" src="/assets/Designer.png" alt="" srcset="" />      
+
+</div>
 
 
 
