@@ -6,21 +6,7 @@ import Cave from "../public/assets/shh.svg"
 import Clock from './clock'
 
 
-
-
-
-
-
-
-
 const page = () => {
-
-  
-
-
-
-
-
 
   return (
     <>
@@ -41,6 +27,13 @@ const page = () => {
         </div>
       </div>
     </div>
+    <div className="gradwrap">
+    <div className="gradient">
+         
+    </div>
+    </div>
+    
+   
 {/* 
     <div className="main2">
       <div className="hero2">
@@ -58,35 +51,52 @@ const page = () => {
 
 
     <div className="main2">
+      
       <div className="main2blur"></div>
 
 
       <div className="tealblob2"></div>
       <div className="purblob2"></div>
 
+<img className="goodnotes sht3"  src="/assets/goodnotes.jpg" alt=""  />
 
       <div className="ver-glass" id='glass'>
       <div className="noise"></div>
+<img className="goodnotes"  src="/assets/goodnotes.jpg" alt=""  />      
+<h1>Features</h1>
+<h2> - Notes</h2>
+<h3>  ↳ Capture ideas. </h3>
+<h2> - Reminder</h2>
+<h3>  ↳ Schedule your stuff. </h3>
+<h3>  ↳ Get Notified. </h3>
 
-        
+
+<h2> - Habit-Tracker</h2>
+<h3>  ↳ Procrastination Score. <span className='keepit'>[keep it 100!]</span></h3>
+<h3>  ↳ Progress Tracker. </h3>
+
+<div className="buttoncon">
+  <p>Click here and lets go buddy!</p>
+  <button>Login</button>
+</div>
 
 
-<img className="goodnotes"  src="/assets/goodnotes.jpg" alt="" srcset="" />      
 </div>
 
 <div className='graph-glass' id='glass'>
-<img className="graphs" src="/assets/graphs.jpeg" alt="" srcset="" />      
+<img className="graphs" src="/assets/graphs.jpeg" alt="" />      
 
 </div>
 
 <div className='shit-glass' id='glass'>
+  <div className="percentage">75%</div>
 <div className="noise"></div>
 
   <div className="circle">
 
   <svg>
-    <circle className='bg' cx="57" cy="57" r="52" />
-    <circle className='progress' cx="57" cy="57" r="52" />
+    <circle className='bg' cx="50%" cy="50%" r="4vw" />
+    <circle className='progress' cx="50%" cy="50%" r="4vw" />
 
   </svg>
   </div>
@@ -99,10 +109,10 @@ const page = () => {
 <Clock />
 
 </div>
-<img className="graphs sht2" src="/assets/Designer.png" alt="" srcset="" />      
+<img className="graphs sht2" src="/assets/Designer.png" alt="" />      
 <div className="vividImage" id="glass">
 <div className="noise"></div>
-<img className="graphs" src="/assets/Designer.png" alt="" srcset="" />      
+<img className="graphs" src="/assets/Designer.png" alt=""  />      
 
 </div>
 

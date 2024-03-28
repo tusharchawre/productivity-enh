@@ -17,13 +17,11 @@ const Clock = () => {
             sec.style.transform = `rotate(${secRotation}deg)`;
         };
 
-        // Update the clock every second
+
         const intervalId = setInterval(updateClock, 1000);
 
-        // Clear interval on component unmount
         return () => clearInterval(intervalId);
 
-        // Initial update
         updateClock();
     }, []);
 

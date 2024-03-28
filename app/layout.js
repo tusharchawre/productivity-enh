@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
 
 
-      <body><SmoothScrolling>{children}</SmoothScrolling></body>
+      <body>{children}</body>
     </html>
   );
 }
